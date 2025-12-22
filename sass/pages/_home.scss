@@ -1,0 +1,23 @@
+.location {
+
+    @include flex-center;
+
+    // --- TEMPORAIRE POUR TESTER ---
+    margin-bottom: 3rem;
+
+    background-color: $color-grey-light;
+    padding: 1.25rem 1rem;
+
+    font-size: 1rem;
+    font-family: "roboto";
+    font-weight: 500;
+    color: $color-grey-dark;
+
+    gap: 0.5rem;
+
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+   i {
+    color: $color-grey-dark;
+   }
+}

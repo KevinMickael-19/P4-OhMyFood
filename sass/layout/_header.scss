@@ -4,16 +4,11 @@
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
     position: relative;
     z-index: 10;
-    
-    &__logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    @include flex-center;
 
-    img {
-        width: 100%;
-        max-width: 200px;
-        object-fit: cover;
+    &__logo {
+        font-family: $font-logo;
+        margin: 0;
+        font-size: 1.875rem;
     }
 }
