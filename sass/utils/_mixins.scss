@@ -1,12 +1,12 @@
 // Mixin pour centrer totalement un élément
-@mixin flex-center {
+@mixin flex-center($justify:center) {
     display: flex;
-    justify-content: center;
+    justify-content: $justify;
     align-items: center;
 }
 
 @mixin title-text {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-text;
     font-size: 1.5rem; // 24px
     font-weight: 700;
 }
