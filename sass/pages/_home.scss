@@ -39,6 +39,7 @@
 }
 
 .steps {
+
     padding: 2rem 1rem;
     background-color: $color-white;
 
@@ -54,6 +55,39 @@
     }
     &__item {
         
-        @include card-base($color-grey-light, flex-start)
+        @include card-base($color-grey-light, flex-start);
+        color:$color-black;
+
+        &:last-child {
+            .steps__icon {
+                color: $color-primary;
+            }
+        }
+    }
+
+    &__icon {
+        color: grey;
+        font-size: 1.2rem;
+        margin-left: 1rem;
+        margin-right: 1.5rem;
+    }
+
+    &__number {
+
+        background-color: $color-primary;
+        color: $color-white;
+
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+
+        @include flex-center;
+
+        position: absolute;
+        left: 0.75rem;
+    }
+    
+    &__text {
+        font-weight: 500;
     }
 }

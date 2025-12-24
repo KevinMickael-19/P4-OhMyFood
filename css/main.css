@@ -36,7 +36,7 @@ ul, ol {
 }
 .btn-gradient:hover {
   opacity: 0.95;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
 }
 
 .header {
@@ -140,4 +140,29 @@ ul, ol {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  color: #000000;
+}
+.steps__item:last-child .steps__icon {
+  color: #9356DC;
+}
+.steps__icon {
+  color: grey;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  margin-right: 1.5rem;
+}
+.steps__number {
+  background-color: #9356DC;
+  color: #ffffff;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0.75rem;
+}
+.steps__text {
+  font-weight: 500;
 }
