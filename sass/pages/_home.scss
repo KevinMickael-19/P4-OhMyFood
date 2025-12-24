@@ -37,3 +37,23 @@
         margin: 1rem 0 2rem 0;
     }
 }
+
+.steps {
+    padding: 2rem 1rem;
+    background-color: $color-white;
+
+    .section-title {
+        @include title-text;
+        margin: 0 0 1.5rem 0;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-left: 0.75rem;
+    }
+    &__item {
+        
+        @include card-base($color-grey-light, flex-start)
+    }
+}

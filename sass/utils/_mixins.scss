@@ -1,12 +1,23 @@
 // Mixin pour centrer totalement un élément
 @mixin flex-center($justify:center) {
+    
     display: flex;
     justify-content: $justify;
     align-items: center;
 }
 
 @mixin title-text {
+
     font-family: $font-text;
     font-size: 1.5rem; // 24px
     font-weight: 700;
+}
+
+@mixin card-base($bg-color: $color-white, $justify:center) {
+
+    background-color: $bg-color;
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    @include flex-center($justify)
 }

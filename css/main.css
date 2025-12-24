@@ -17,8 +17,10 @@ a {
   color: inherit;
 }
 
-ul {
+ul, ol {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .btn-gradient {
@@ -112,4 +114,30 @@ ul {
   font-weight: 300;
   color: #353535;
   margin: 1rem 0 2rem 0;
+}
+
+.steps {
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+}
+.steps .section-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+}
+.steps__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 0.75rem;
+}
+.steps__item {
+  background-color: #f6f6f6;
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
