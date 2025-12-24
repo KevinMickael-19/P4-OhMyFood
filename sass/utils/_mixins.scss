@@ -4,3 +4,9 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin title-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem; // 24px
+    font-weight: 700;
+}
