@@ -91,3 +91,20 @@
         font-weight: 500;
     }
 }
+
+.restaurants {
+    background-color: $color-grey-light;
+    padding: 2.5rem 0;
+
+    &__container {
+
+        padding: 0 1rem;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        margin-top: 1.5rem;
+    }
+}

@@ -223,3 +223,17 @@ ul, ol {
 .steps__text {
   font-weight: 500;
 }
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 2.5rem 0;
+}
+.restaurants__container {
+  padding: 0 1rem;
+}
+.restaurants__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
