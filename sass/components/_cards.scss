@@ -1,0 +1,74 @@
+.card {
+
+    background-color: $color-white;
+    border-radius: 1rem;
+    box-shadow: $shadow-card;
+
+    overflow: hidden;
+    position: relative;
+
+    a {
+        display: block;
+    }
+
+    &__img-container {
+
+        height: 11rem;
+        width: 100%;
+        position: relative;
+    }
+
+    &__img {
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    &__badge {
+
+        background-color: $color-tertiary;
+        color: $color-dark-green;
+        padding: 0.5rem 1rem;
+        border-radius: 0.125rem;
+
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+
+        font-weight: 500;
+        font-size: 0.75rem;
+
+    }
+
+    &__content {
+
+        padding: 1rem;
+        @include flex-center($justify: space-between);
+    }
+
+    &__text {
+
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    &__title {
+
+        margin: 0;
+        font-size: 1.1rem;
+    }
+
+    &__subtitle {
+        font-size: 1.05rem;
+        font-weight: 300;
+    }
+
+    &__like {
+
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+    }
+}

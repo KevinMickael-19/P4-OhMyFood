@@ -10,13 +10,16 @@ $color-grey-dark: #353535;  // Fond footer et police localisation
 $color-grey: #eaeaea; // fond localisation
 $color-white: #ffffff;
 $color-black: #000000;
+$color-dark-green: #008766;
 
 // Polices
 $font-logo: 'Shrikhand', cursive;
 $font-text: 'Roboto', sans-serif;
 
-// Breakpoints (pour plus tard)
+// Breakpoints
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1024px;
 
+/* Ombres */
+$shadow-card: 0 4px 15px rgba(0, 0, 0, 0.1);
 
