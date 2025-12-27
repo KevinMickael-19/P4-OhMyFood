@@ -96,6 +96,64 @@ ul, ol {
   margin-right: 0.5rem;
 }
 
+.menu-item {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+  align-items: stretch;
+  margin-bottom: 15px;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+.menu-item__content {
+  padding: 1rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 1;
+}
+.menu-item__title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-item__subtitle {
+  margin: 5px 0 0 0;
+  font-size: 0.9rem;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-item__price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-weight: 700;
+  padding: 1rem;
+  padding-left: 0;
+}
+.menu-item__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 60px;
+  margin-right: -60px;
+  border-radius: 0 1rem 1rem 0;
+  flex-shrink: 0;
+}
+.menu-item__check i {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
 .header {
   background-color: #ffffff;
   padding: 1rem;
@@ -107,9 +165,14 @@ ul, ol {
   align-items: center;
 }
 .header__logo {
+  display: block;
   font-family: "Shrikhand", cursive;
   margin: 0;
   font-size: 1.875rem;
+}
+.header__arrow {
+  position: absolute;
+  left: 20px;
 }
 
 .footer {
@@ -236,4 +299,62 @@ ul, ol {
   grid-template-columns: 1fr;
   gap: 1.25rem;
   margin-top: 1.5rem;
+}
+
+.banner-img {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  border-radius: 2.5rem 2.5rem 0 0;
+  padding: 1rem 2rem;
+  position: relative;
+  margin-top: -4rem;
+  z-index: 1;
+}
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 20px;
+}
+.menu__title {
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+  margin: 0;
+  font-size: 1.75rem;
+}
+.menu__like {
+  font-size: 1.5rem;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.menu__group {
+  margin-bottom: 40px;
+}
+.menu__group-title {
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+.menu__group-title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin-top: 5px;
+}
+.menu__order {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding-bottom: 20px;
 }
