@@ -165,10 +165,10 @@ ul, ol {
   font-size: 0.9rem;
   transition: transform 0.8s ease-in-out;
 }
-.menu-item:hover .menu-item__check {
+.menu-item:hover .menu-item__check, .menu-item:active .menu-item__check, .menu-item:focus-visible .menu-item__check {
   margin-right: 0;
 }
-.menu-item:hover .menu-item__check i {
+.menu-item:hover .menu-item__check i, .menu-item:active .menu-item__check i, .menu-item:focus-visible .menu-item__check i {
   transform: rotate(360deg);
 }
 

@@ -150,7 +150,9 @@
 
     }
 
-    &:hover {
+    &:hover, 
+    &:active, 
+    &:focus-visible {
 
         .menu-item__check {
 
