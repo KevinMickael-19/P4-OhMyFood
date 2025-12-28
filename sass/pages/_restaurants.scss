@@ -61,8 +61,7 @@
 
     &__order {
 
-        display: flex;
-        justify-content: center;
+        @include flex-center;
         margin-top: 40px;
         padding-bottom: 20px;
     }
