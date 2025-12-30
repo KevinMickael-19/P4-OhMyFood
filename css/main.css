@@ -93,7 +93,7 @@ ul, ol {
 }
 .card__badge {
   background-color: #99E2D0;
-  color: #008766;
+  color: darken #008766, 10;
   padding: 0.5rem 1rem;
   border-radius: 0.125rem;
   position: absolute;

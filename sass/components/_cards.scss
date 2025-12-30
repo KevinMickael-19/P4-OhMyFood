@@ -31,7 +31,7 @@
     &__badge {
 
         background-color: $color-tertiary;
-        color: $color-dark-green;
+        color: darken ($color-dark-green, 10);
         padding: 0.5rem 1rem;
         border-radius: 0.125rem;
 
