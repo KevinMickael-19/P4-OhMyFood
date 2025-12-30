@@ -1,0 +1,22 @@
+.loader {
+
+    position: fixed;
+    inset:0;
+    background-color: rgba(56, 54, 54, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+
+    @include flex-center;
+
+    animation: fadeOut .5s 2s forwards;
+
+    &__icon {
+
+        font-size: 3rem;
+        background: linear-gradient(to top, $color-primary,$color-secondary);
+        -webkit-background-clip: text;
+        color: transparent;
+
+        animation: spin 1.5s linear infinite;
+    }
+}
