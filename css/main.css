@@ -172,6 +172,36 @@ ul, ol {
   transform: rotate(360deg);
 }
 
+.menu__like, .card__like {
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.menu__like i, .card__like i {
+  font-size: 1.5rem;
+  color: #000000;
+}
+.menu__like::after, .card__like::after {
+  content: "\f004";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transform: scale(0.2);
+  transition: opacity 0.3s ease-out, transform 0.25s cubic-bezier(0.2, 0.6, 0.3, 1);
+}
+.menu__like:hover::after, .menu__like:active::after, .menu__like:focus-visible::after, .card__like:hover::after, .card__like:active::after, .card__like:focus-visible::after {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
 .header {
   background-color: #ffffff;
   padding: 1rem;
