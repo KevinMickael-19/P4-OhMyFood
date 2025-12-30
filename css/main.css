@@ -241,11 +241,12 @@ ul, ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeOut 0.5s 2s forwards;
+  animation: fadeOut 0.5s 0.8s forwards;
 }
 .loader__icon {
-  font-size: 3rem;
+  font-size: 4rem;
   background: linear-gradient(to top, #9356DC, #FF79DA);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   animation: spin 1.5s linear infinite;

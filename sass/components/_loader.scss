@@ -8,12 +8,13 @@
 
     @include flex-center;
 
-    animation: fadeOut .5s 2s forwards;
+    animation: fadeOut .5s .8s forwards;
 
     &__icon {
 
-        font-size: 3rem;
+        font-size: 4rem;
         background: linear-gradient(to top, $color-primary,$color-secondary);
+        background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
 
