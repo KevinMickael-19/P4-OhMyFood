@@ -86,6 +86,16 @@
     cursor: pointer;
     overflow: hidden;
 
+    animation: fadeInUp 1s both;
+
+    @for $i from 1 through 10 {
+
+        &:nth-child(#{$i}) {
+
+            animation-delay: #{$i*0.15}s;
+        } 
+    }
+
     &__content {
 
         padding: 1rem;
