@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /* FICHIER: sass/Utils/_variables.scss */
 /* Ombres */
+/* Pour les tablettes (ex: iPad) */
+/* Pour les ordinateurs portables et desktop standard */
+/* Pour les très grands écrans */
 @keyframes fadeInUp {
   0% {
     opacity: 0;

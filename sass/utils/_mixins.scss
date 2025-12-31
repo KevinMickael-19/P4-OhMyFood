@@ -1,10 +1,12 @@
 // Mixin pour centrer totalement un élément
+
 @mixin flex-center($justify:center) {
     
     display: flex;
     justify-content: $justify;
     align-items: center;
 }
+//Mixin pour les titres
 
 @mixin title-text {
 
@@ -12,6 +14,7 @@
     font-size: 1.5rem; // 24px
     font-weight: 700;
 }
+//Mixin pour les composants "cartes"
 
 @mixin card-base($bg-color: $color-white, $justify:center) {
 
@@ -21,3 +24,27 @@
     box-shadow:$shadow-card;
     @include flex-center($justify)
 }
+
+//Mixin pour les différents formats d'écran
+
+/* Pour les tablettes (ex: iPad) */
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+/* Pour les ordinateurs portables et desktop standard */
+@mixin desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+/* Pour les très grands écrans */
+@mixin large-desktop {
+    @media (min-width: 1440px) {
+        @content;
+    }
+}
+
