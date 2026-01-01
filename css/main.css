@@ -313,6 +313,9 @@ ul, ol {
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   background-color: #353535;
   padding: 1.5rem;
   color: #ffffff;
@@ -321,7 +324,6 @@ ul, ol {
   font-family: "Shrikhand", cursive;
   font-size: 1.2rem;
   font-weight: normal;
-  margin-bottom: 1rem;
 }
 .footer__list {
   display: flex;
