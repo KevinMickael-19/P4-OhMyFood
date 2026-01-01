@@ -320,9 +320,17 @@ ul, ol {
   padding: 1.5rem;
   color: #ffffff;
 }
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row-reverse;
+    align-items: end;
+    justify-content: flex-start;
+    gap: 2.5rem;
+  }
+}
 .footer__logo {
   font-family: "Shrikhand", cursive;
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   font-weight: normal;
 }
 .footer__list {
@@ -330,10 +338,18 @@ ul, ol {
   flex-direction: column;
   gap: 0.5rem;
 }
+@media (min-width: 768px) {
+  .footer__list {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+}
 .footer a {
-  display: flex;
+  font-size: 1rem;
   color: #ffffff;
-  gap: 0.75rem;
+  white-space: nowrap;
 }
 .footer i {
   width: 1.25rem;
