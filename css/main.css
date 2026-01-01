@@ -461,6 +461,11 @@ ul, ol {
   gap: 1.25rem;
   margin-top: 1.5rem;
 }
+@media (min-width: 768px) {
+  .restaurants__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .banner-img {
   width: 100%;
