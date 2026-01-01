@@ -374,8 +374,13 @@ ul, ol {
 }
 
 .steps {
+  display: flex;
+  justify-content: center;
   padding: 2rem 1rem;
   background-color: #ffffff;
+}
+.steps .steps__content {
+  width: 100%;
 }
 .steps .section-title {
   font-family: "Roboto", sans-serif;
@@ -398,6 +403,7 @@ ul, ol {
   justify-content: flex-start;
   align-items: center;
   color: #000000;
+  position: relative;
 }
 .steps__item:last-child .steps__icon {
   color: #9356DC;
@@ -418,7 +424,7 @@ ul, ol {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 0.75rem;
+  left: -0.75rem;
 }
 .steps__text {
   font-weight: 500;

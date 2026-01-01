@@ -21,6 +21,7 @@
 }
 
 .hero {
+
     background-color: $color-grey-light;
     padding: 3rem 1.5rem;
     text-align: center;
@@ -40,9 +41,16 @@
 
 .steps {
 
+    display: flex;
+    justify-content: center;
     padding: 2rem 1rem;
     background-color: $color-white;
 
+.steps__content {
+
+    width: 100%;
+
+}
     .section-title {
         @include title-text;
         margin: 0 0 1.5rem 0;
@@ -53,16 +61,20 @@
         gap: 1.5rem;
         padding-left: 0.75rem;
     }
+    
     &__item {
+        
         
         @include card-base($color-grey-light, flex-start);
         color:$color-black;
-
+        
         &:last-child {
             .steps__icon {
                 color: $color-primary;
             }
         }
+        
+        position: relative;
     }
 
     &__icon {
@@ -84,7 +96,7 @@
         @include flex-center;
 
         position: absolute;
-        left: 0.75rem;
+        left: -0.75rem;
     }
     
     &__text {
