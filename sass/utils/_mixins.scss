@@ -29,21 +29,21 @@
 
 /* Pour les tablettes (ex: iPad) */
 @mixin tablet {
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-tablet) {
         @content;
     }
 }
 
 /* Pour les ordinateurs portables et desktop standard */
 @mixin desktop {
-    @media (min-width: 1024px) {
+    @media (min-width: $breakpoint-desktop) {
         @content;
     }
 }
 
 /* Pour les très grands écrans */
 @mixin large-desktop {
-    @media (min-width: 1440px) {
+    @media (min-width: $breakpoint-large-desktop) {
         @content;
     }
 }
