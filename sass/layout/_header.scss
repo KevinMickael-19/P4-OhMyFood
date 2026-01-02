@@ -7,6 +7,11 @@
     z-index: 10;
     @include flex-center;
 
+    @include tablet {
+
+        box-shadow: none;
+    }
+
     &__logo {
 
         display: block;
