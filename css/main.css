@@ -432,6 +432,12 @@ ul, ol {
   gap: 1.5rem;
   padding-left: 0.75rem;
 }
+@media (min-width: 1024px) {
+  .steps__list {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 .steps__item {
   background-color: #f6f6f6;
   border-radius: 1.25rem;
