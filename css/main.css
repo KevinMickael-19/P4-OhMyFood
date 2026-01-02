@@ -394,6 +394,16 @@ ul, ol {
   font-size: 1.5rem;
   font-weight: 700;
 }
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+}
 .hero__subtitle {
   font-size: 1.1rem;
   font-weight: 300;
