@@ -148,13 +148,15 @@
 
     &__container {
 
+        max-width: $breakpoint-large-desktop;
+        margin: auto;
         padding: 0 1rem;
 
      @include tablet {
 
         padding: 0 3rem;
      }
-       
+
     }
 
     &__grid {
@@ -168,6 +170,11 @@
 
             grid-template-columns: repeat(2, 1fr);
 
+        }
+
+        @include desktop {
+
+            gap: 2rem 4rem;
         }
     }
     

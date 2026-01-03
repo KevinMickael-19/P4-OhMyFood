@@ -490,6 +490,8 @@ ul, ol {
   padding: 2.5rem 0;
 }
 .restaurants__container {
+  max-width: 1280px;
+  margin: auto;
   padding: 0 1rem;
 }
 @media (min-width: 768px) {
@@ -506,6 +508,11 @@ ul, ol {
 @media (min-width: 768px) {
   .restaurants__grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .restaurants__grid {
+    gap: 2rem 4rem;
   }
 }
 
