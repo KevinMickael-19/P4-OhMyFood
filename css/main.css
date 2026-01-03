@@ -432,6 +432,11 @@ ul, ol {
   gap: 1.5rem;
   padding-left: 0.75rem;
 }
+@media (min-width: 768px) {
+  .steps__list {
+    align-items: center;
+  }
+}
 @media (min-width: 1024px) {
   .steps__list {
     flex-direction: row;
@@ -451,6 +456,11 @@ ul, ol {
 }
 .steps__item:last-child .steps__icon {
   color: #9356DC;
+}
+@media (min-width: 768px) {
+  .steps__item {
+    width: 75%;
+  }
 }
 .steps__icon {
   color: grey;

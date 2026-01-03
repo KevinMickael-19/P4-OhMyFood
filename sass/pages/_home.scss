@@ -81,6 +81,12 @@
         gap: 1.5rem;
         padding-left: 0.75rem;
 
+
+        @include tablet {
+
+            align-items: center;
+        }
+
         @include desktop {
 
             flex-direction: row;
@@ -97,6 +103,11 @@
             .steps__icon {
                 color: $color-primary;
             }
+        }
+
+        @include tablet {
+
+            width: 75%;
         }
         
         position: relative;
