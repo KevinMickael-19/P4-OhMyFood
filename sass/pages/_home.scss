@@ -66,7 +66,14 @@
 .steps__content {
 
     width: 100%;
+    max-width: $breakpoint-large-desktop;
     padding: 0 2rem;
+
+
+    @include desktop {
+
+        padding: 0 3rem;   
+    }
 
 }
     .section-title {
