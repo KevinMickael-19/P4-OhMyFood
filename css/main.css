@@ -545,6 +545,12 @@ ul, ol {
   padding: 1rem 0;
   margin-bottom: 20px;
 }
+@media (min-width: 768px) {
+  .menu__header {
+    justify-content: center;
+    gap: 2rem;
+  }
+}
 .menu__title {
   font-family: "Shrikhand", cursive;
   font-weight: normal;
