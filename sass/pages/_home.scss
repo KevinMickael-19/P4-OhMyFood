@@ -60,12 +60,13 @@
 
     display: flex;
     justify-content: center;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
     background-color: $color-white;
 
 .steps__content {
 
     width: 100%;
+    padding: 0 2rem;
 
 }
     .section-title {
@@ -141,12 +142,19 @@
 }
 
 .restaurants {
+
     background-color: $color-grey-light;
     padding: 2.5rem 0;
 
     &__container {
 
         padding: 0 1rem;
+
+     @include tablet {
+
+        padding: 0 3rem;
+     }
+       
     }
 
     &__grid {
@@ -162,4 +170,5 @@
 
         }
     }
+    
 }

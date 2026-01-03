@@ -414,11 +414,12 @@ ul, ol {
 .steps {
   display: flex;
   justify-content: center;
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   background-color: #ffffff;
 }
 .steps .steps__content {
   width: 100%;
+  padding: 0 2rem;
 }
 .steps .section-title {
   font-family: "Roboto", sans-serif;
@@ -490,6 +491,11 @@ ul, ol {
 }
 .restaurants__container {
   padding: 0 1rem;
+}
+@media (min-width: 768px) {
+  .restaurants__container {
+    padding: 0 3rem;
+  }
 }
 .restaurants__grid {
   display: grid;
