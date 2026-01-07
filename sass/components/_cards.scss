@@ -3,7 +3,7 @@
 .card {
 
     background-color: $color-white;
-    border-radius: 1rem;
+    border-radius: $radius-sm;
     box-shadow: $shadow-card;
 
     overflow: hidden;
@@ -33,7 +33,7 @@
         background-color: $color-tertiary;
         color: $color-dark-green;
         padding: 0.5rem 1rem;
-        border-radius: 0.125rem;
+        border-radius: $radius-xs;
 
         position: absolute;
         top: 1rem;
