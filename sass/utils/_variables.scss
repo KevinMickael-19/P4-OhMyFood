@@ -23,10 +23,13 @@ $radius-md: 1.25rem;
 $radius-lg: 2rem;
 $raidus-xl: 2.5rem;
 
+// Gradients
+$gradient-main:linear-gradient(to top left,$color-primary,$color-secondary);
+$gradient-icon:linear-gradient(to top,$color-primary,$color-secondary);
 
 /* Ombres */
 $shadow-card: 0 4px 15px rgba(0, 0, 0, 0.1);
-$shadow-header: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15)
+$shadow-header: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
 $shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.25);
 
 

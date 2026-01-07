@@ -1,11 +1,13 @@
-// Mixin pour centrer totalement un élément
+// Mixin pour centrer un élément
 
-@mixin flex-center($justify:center) {
+@mixin flex-center($justify:center, $align: center, $direction: row) {
     
     display: flex;
     justify-content: $justify;
-    align-items: center;
+    align-items: $align;
+    flex-direction: $direction;
 }
+
 //Mixin pour les titres
 
 @mixin title-text {
@@ -14,20 +16,30 @@
     font-size: 1.5rem; // 24px
     font-weight: 700;
 }
+
+
 //Mixin pour les composants "cartes"
 
-@mixin card-base($bg-color: $color-white, $justify:center) {
+@mixin card-base($bg-color: $color-white, $radius: $radius-sm, $shadow: $shadow-card, $justify:center) {
 
     background-color: $bg-color;
-    border-radius: 1.25rem;
+    border-radius: $radius;
     padding: 1.5rem;
-    box-shadow:$shadow-card;
+    box-shadow:$shadow;
     @include flex-center($justify)
+}
+
+// Text ellipsis
+
+@mixin text-ellipsis {
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
 }
 
 //Mixin pour les différents formats d'écran
 
-/* Pour les tablettes (ex: iPad) */
+/* Pour les tablettes */
 @mixin tablet {
     @media (min-width: $breakpoint-tablet) {
         @content;
