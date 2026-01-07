@@ -1,9 +1,9 @@
 .btn-gradient {
 
-    background: linear-gradient(to top left,$color-primary, $color-secondary);
+    background: $gradient-main;
 
     border: none;
-    border-radius: 2rem;
+    border-radius: $radius-lg;
     color: $color-white;
     padding: 1rem 2rem;
     font-size: 1rem;
