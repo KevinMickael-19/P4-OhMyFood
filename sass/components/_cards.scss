@@ -99,9 +99,8 @@
     &__content {
 
         padding: 1rem;
+        @include text-ellipsis;
         white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
         flex: 1;
     }
 
@@ -110,8 +109,7 @@
         margin: 0;
         font-size: 1.1rem;
         font-weight: 500;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        @include text-ellipsis;
     }
 
     &__subtitle {
@@ -119,8 +117,7 @@
         margin: 5px 0 0 0;
         font-size: 0.9rem;
         font-weight: 300;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        @include text-ellipsis;
     }
 
     &__price {

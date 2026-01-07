@@ -32,9 +32,9 @@
 // Text ellipsis
 
 @mixin text-ellipsis {
-white-space: nowrap;
-overflow: hidden;
-text-overflow: ellipsis;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 //Mixin pour les différents formats d'écran

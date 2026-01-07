@@ -179,9 +179,9 @@ ul, ol {
 }
 .menu-item__content {
   padding: 1rem;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   flex: 1;
 }
 .menu-item__title {
