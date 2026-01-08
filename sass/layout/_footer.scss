@@ -7,7 +7,7 @@
     padding: 1.5rem;
     color: $color-white;
     
-    @include tablet {
+    @include desktop {
 
         flex-direction: row-reverse;
         align-items: center;
@@ -28,7 +28,7 @@
         flex-direction: column;
         gap: 0.5rem;
         
-        @include tablet {
+        @include desktop {
             
             flex-direction: row;
             align-items: center;
