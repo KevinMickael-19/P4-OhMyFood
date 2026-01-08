@@ -444,7 +444,7 @@ ul, ol {
 .steps__list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
   padding-left: 0.75rem;
 }
 @media (min-width: 768px) {
@@ -469,6 +469,12 @@ ul, ol {
   align-items: center;
   flex-direction: row;
   color: #000000;
+}
+.steps__item:hover {
+  background-color: rgb(248.55, 248.55, 248.55);
+}
+.steps__item:hover i {
+  color: #9356DC;
 }
 @media (min-width: 768px) {
   .steps__item {

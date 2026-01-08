@@ -91,7 +91,7 @@
 
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 2rem;
         padding-left: 0.75rem;
 
 // Responsive
@@ -114,6 +114,15 @@
 
         @include card-base($color-grey-light, $radius-sm, $shadow-card, flex-start);
         color:$color-black;
+        
+        &:hover {
+
+            background-color: lighten($color-grey-light, 1%);
+
+            i {
+                color: $color-primary;
+            }
+        }    
         
 // Responsive
 
