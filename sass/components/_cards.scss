@@ -100,7 +100,7 @@
         &:nth-child(#{$i}) {
 
             animation-delay: #{$i*0.15}s;
-        } 
+        }
     }
 
     &__content {
