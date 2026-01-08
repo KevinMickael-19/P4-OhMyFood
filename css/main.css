@@ -339,9 +339,9 @@ ul, ol {
 @media (min-width: 768px) {
   .footer {
     flex-direction: row-reverse;
-    align-items: end;
+    align-items: center;
     justify-content: flex-start;
-    gap: 2.5rem;
+    gap: 4rem;
   }
 }
 .footer__logo {
@@ -357,9 +357,11 @@ ul, ol {
 @media (min-width: 768px) {
   .footer__list {
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
     gap: 1rem;
+  }
+  .footer__list li:nth-child(2) {
+    margin-right: 2rem;
   }
 }
 .footer a {
