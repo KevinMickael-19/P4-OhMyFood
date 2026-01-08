@@ -79,6 +79,10 @@ ul, ol {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
 }
 .card a {
   display: block;
