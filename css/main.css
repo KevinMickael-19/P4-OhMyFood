@@ -459,19 +459,16 @@ ul, ol {
   }
 }
 .steps__item {
+  position: relative;
   background-color: #f6f6f6;
-  border-radius: flex-start;
+  border-radius: 1rem;
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   color: #000000;
-  position: relative;
-}
-.steps__item:last-child .steps__icon {
-  color: #9356DC;
 }
 @media (min-width: 768px) {
   .steps__item {

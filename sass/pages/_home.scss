@@ -15,6 +15,8 @@
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+// Responsive
+
     @include tablet {
 
         box-shadow: none;
@@ -36,6 +38,8 @@
     &__title {
         
         @include title-text;
+
+// Responsive
 
         @include tablet {
     
@@ -69,6 +73,7 @@
     max-width: $breakpoint-large-desktop;
     padding: 0 2rem;
 
+// Responsive
 
     @include desktop {
 
@@ -89,7 +94,8 @@
         gap: 1.5rem;
         padding-left: 0.75rem;
 
-
+// Responsive
+    
         @include tablet {
 
             align-items: center;
@@ -104,21 +110,18 @@
     
     &__item {
         
-        @include card-base($color-grey-light, flex-start);
+        position: relative;
+
+        @include card-base($color-grey-light, $radius-sm, $shadow-card, flex-start);
         color:$color-black;
         
-        &:last-child {
-            .steps__icon {
-                color: $color-primary;
-            }
-        }
+// Responsive
 
         @include tablet {
 
             width: 75%;
         }
         
-        position: relative;
     }
 
     &__icon {
@@ -144,6 +147,7 @@
     }
     
     &__text {
+
         font-weight: 500;
     }
 }
@@ -159,6 +163,8 @@
         margin: auto;
         padding: 0 1rem;
 
+// Responsive
+
      @include tablet {
 
         padding: 0 3rem;
@@ -172,6 +178,8 @@
         grid-template-columns: 1fr;
         gap: 1.25rem;
         margin-top: 1.5rem;
+
+// Responsive
 
         @include tablet {
 
