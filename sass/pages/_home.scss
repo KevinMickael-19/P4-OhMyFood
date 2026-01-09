@@ -15,7 +15,7 @@
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-// Responsive
+ // Responsive
 
     @include tablet {
 
@@ -39,7 +39,7 @@
         
         @include title-text;
 
-// Responsive
+ // Responsive
 
         @include tablet {
     
@@ -73,7 +73,7 @@
     max-width: $breakpoint-large-desktop;
     padding: 0 2rem;
 
-// Responsive
+ // Responsive
 
     @include desktop {
 
@@ -94,7 +94,7 @@
         gap: 2rem;
         padding-left: 0.75rem;
 
-// Responsive
+ // Responsive
     
         @include tablet {
 
@@ -124,7 +124,7 @@
             }
         }    
         
-// Responsive
+ // Responsive
 
         @include tablet {
 
@@ -172,7 +172,7 @@
         margin: auto;
         padding: 0 1rem;
 
-// Responsive
+ // Responsive
 
      @include tablet {
 
@@ -188,7 +188,7 @@
         gap: 1.25rem;
         margin-top: 1.5rem;
 
-// Responsive
+ // Responsive
 
         @include tablet {
 

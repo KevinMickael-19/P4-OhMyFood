@@ -368,6 +368,10 @@ ul, ol {
   font-size: 1rem;
   color: #ffffff;
   white-space: nowrap;
+  transition: color 0.3s;
+}
+.footer a:hover {
+  color: #FF79DA;
 }
 .footer i {
   width: 1.25rem;
